@@ -1,0 +1,29 @@
+#logout{
+  color: rgb(22, 21, 21) !important;
+  border-radius:10px;
+}
+
+#logout:hover{
+  background-color: rgb(187, 16, 16) !important;
+  color: rgb(250, 249, 249) !important;
+  size: 110%;
+}
+#l{
+  color: rgb(22, 21, 21) !important;
+  border-radius:10px;
+}
+
+#logout:hover{
+  background-color: rgb(187, 16, 16) !important;
+  color: rgb(250, 249, 249) !important;
+  size: 110%;
+}
+
+ul > li > a {
+  border-radius:10px;
+}
+ul > li > a:hover {
+  background-color: rgb(46, 185, 4) !important;
+  color: rgb(250, 249, 249) !important;
+  size: 110%;
+}
