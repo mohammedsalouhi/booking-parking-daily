@@ -4,8 +4,8 @@ require_once "config.php";
 require_once "classes/reservation.php";
 $date_occupate = array();
 if (isset($_POST['prenota'])) {
-    #echo '<script>console.log("ciao mondo")</script>';
     $data_checkin = $_POST['data_checkin'];
+    echo $data_checkin;
     $data_checkout = $_POST['data_checkout'];
     $tipo_veicolo = $_POST['tipo_veicolo'];
     $targa = $_POST['targa'];

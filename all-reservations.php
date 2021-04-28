@@ -41,6 +41,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <th>Tipologia Veicolo</th>
                 <th>Prenotato Da -id-</th>
                 <th>Prenotato Da -username-</th>
+                <th>Posto n°</th>
+                <th>Importo Dovuto (€)</th>
                 <th>Prenotato in Data</th>
                 <th>Cancella prenotazione</th>
             </thead>

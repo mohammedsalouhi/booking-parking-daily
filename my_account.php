@@ -33,7 +33,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
     <!-- sezione navbar -->
-    <?php include('inc/navbar.php'); ?>
+    <?php if ($_SESSION['is_admin'] == true) {
+        include('inc/navbar-admin.php');
+    } else {
+        include('inc/navbar.php');
+    }
+    ?>
+
     <!-- fine sezione navbar -->
 
     <div class="border rounded shadow-lg mt-5 p-3">
@@ -52,7 +58,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <h3>Password</h3>
                 <button class="btn btn-outline-danger" id="change-password"><i class="far fa-edit"></i></button>
-                
+
             </li>
             <li class="list-group-item" id="password-form">
                 <form action="account.php" method="post">
@@ -62,7 +68,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 </form>
             </li>
             <form action="account.php" method="post">
-                <input type="hidden" name="user_id" value="<?=$_SESSION['id']?>">
+                <input type="hidden" name="user_id" value="<?= $_SESSION['id'] ?>">
                 <input type="submit" name="delete_account" value="Cancella Account" class="btn btn-outline-danger mt-4 btn-block">
             </form>
         </ul>
